@@ -1,3 +1,11 @@
+##implementation notes:
+
+I downloaded the file to my computer. 
+Each program reads the entire file, which is highly inefficient in time but it works
+
+
+
+
 ## Introduction
 
 This assignment uses data from
