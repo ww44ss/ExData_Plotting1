@@ -16,6 +16,7 @@ qdata$Date<-t
 ttt<-subset(qdata, tt<strptime("2007-02-03 00:00:00", format="%Y-%m-%d %H:%M:%S")&
                     tt>strptime("2007-02-01 00:00:00", format="%Y-%m-%d %H:%M:%S"))
 
+##create plot
 png(filename="~/ExData_Plotting1/Plot2.png")
 plot(ttt$Global_active_power ~ ttt$tt, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

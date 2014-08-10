@@ -16,6 +16,8 @@ qdata$Date<-t
 ttt<-subset(qdata, tt<strptime("2007-02-03 00:00:00", format="%Y-%m-%d %H:%M:%S")&
                     tt>strptime("2007-02-01 00:00:00", format="%Y-%m-%d %H:%M:%S"))
 
+
+##histrogram
 png(filename="~/ExData_Plotting1/Plot1.png")
 hist(ttt$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", ylab="Frequency", main="Global Active Power")
 dev.off()

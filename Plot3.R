@@ -16,6 +16,8 @@ qdata$Date<-t
 ttt<-subset(qdata, tt<strptime("2007-02-03 00:00:00", format="%Y-%m-%d %H:%M:%S")&
                     tt>strptime("2007-02-01 00:00:00", format="%Y-%m-%d %H:%M:%S"))
 
+
+#create plot
 png(filename="~/ExData_Plotting1/Plot3.png")
 plot(ttt$Sub_metering_1~ ttt$tt, type="l", xlab="", ylab="Energy sub metering")
 lines(ttt$Sub_metering_2~ ttt$tt, col="red")
